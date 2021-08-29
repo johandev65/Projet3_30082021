@@ -1,0 +1,15 @@
+{
+       "name": "p3_oh_my_food",
+       "version": "1.0.0",
+       "description": "Projet 3 du parcours pro Open Classrooms de Développeur front-end | Dynamisation d'une page web avec des animations CSS",
+       "main": "index.js",
+       "scripts": {
+              "sass": "sass --watch ./sass/style.scss:css/style.css"
+       },
+       "author": "johandev65",
+       "license": "ISC",
+       "dependencies": {},
+       "devDependencies": {
+              "sass": "^1.38.2"
+       }
+}
