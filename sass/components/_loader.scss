@@ -1,0 +1,62 @@
+.loader {
+	height: 100vh;
+	width: 100vw;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: loader-display 4s ease-out forwards;
+	z-index: 10;
+	position: fixed;
+
+	&__container {
+		width: 40rem;
+		padding: 0;
+	}
+
+	&__svg {
+		height: 100%;
+		width: 100%;
+		font-size: 100rem;
+		
+		& path {
+			fill: transparent;
+			stroke-width: 2;
+			stroke: $tertiary_color;
+			stroke-dasharray: 200;
+			stroke-dashoffset: 200;
+			animation: anim 2s 500ms linear forwards;
+		}
+	}
+}
+
+//afficher la "page" loader en légère transparence puis disparition
+@keyframes loader-display {
+	0% {
+		opacity: 1;
+		visibility: visible;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+//animer "l'écriture" du loader logo svg ohmyfood
+@keyframes anim {
+	0% {
+		stroke-dashoffset: 200;
+	}
+	40% {
+		stroke-dashoffset: 100;
+	}
+	90% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}

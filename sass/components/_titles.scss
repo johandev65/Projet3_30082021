@@ -1,0 +1,63 @@
+// TITRES
+
+// h1 global
+h1 {
+    font-weight: bold;
+    font-size:1.5em;
+    text-align: center;
+}
+// h1 de la page d'accueil
+.reservation_title {
+    font-style: normal;
+    font-family: $text_font;
+}
+// h1 des 4 pages restaurants
+.restaurant_title_section {
+    font-family: $title_font;
+    font-style: italic;
+    text-align: left;
+}
+
+// h2 global
+h2 {
+    font-family: $text_font;
+}
+// h2 de la page d'accueil
+.functioning_title, .restaurants_title{
+    font-weight: bold;
+    
+}
+// h2 des 4 pages restaurants
+.menu_title{
+    font-size: 1em;
+    font-weight: 300;
+    font-style: normal;
+    width: 40px;
+    padding: 0px 0px 5px 0px;
+    border-bottom: solid 3px $tertiary_color;
+    margin: 40px 0px 20px 0px;
+}
+
+// h3 de la page d'accueil
+.card__title{
+    font-weight: bold;
+    font-family: $text_font;
+    font-size: 1.2em;
+    @include small_mobile {
+        font-size: 1.1em;
+    }
+}
+// h3 des 4 pages restaurants
+.choice_title{
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: $text_font;
+    padding: 0px 0px 5px 0px;
+    width: 75%;
+}
+
+// h4 du footer
+.footer_title {
+    font-size: 1.6em;
+    font-family: $title_font;
+}

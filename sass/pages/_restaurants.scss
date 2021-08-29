@@ -1,0 +1,37 @@
+.restaurant_title_section {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+.restaurant_title_section .heart {
+    width: 30px;
+}
+
+.menu {
+    background-color: $grey_light_color;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 40px 20px 60px 20px;
+    margin-top: -40px;
+    position: relative;
+    @include desktop {
+        margin-top: -90px;
+    }
+
+    .choices_items {
+        display: flex;
+        flex-direction: column;
+        gap:25px;
+        @include tablet {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 23px;
+        }
+    }
+
+    .order {
+        text-align: center;
+        margin-top: 50px;
+    }
+}

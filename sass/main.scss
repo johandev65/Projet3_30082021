@@ -1,0 +1,27 @@
+// IMPORTATION DES VARIABLES ET DES MIXINS
+@import './utils/variables';
+@import './utils/mixins';
+
+// IMPORTATION DES PROPRIÉTÉS GÉNÉRALES DU SITE ET DES POLICES
+@import './base/globals';
+@import './base/wrapper';
+@import './base/fonts';
+
+// IMPORTATION DES LAYOUTS "HEADER ET FOOTER"
+@import './layout/header';
+@import './layout/footer';
+
+// IMPORTATION DES DESIGNS DES PAGES "ACCUEIL" ET "RESTAURANTS" 
+@import './pages/homepage';
+@import './pages/restaurants';
+
+// IMPORTATION DES DESIGNS DES COMPOSANTS"
+@import './components/cards';
+@import './components/choice';
+@import './components/steps';
+@import './components/badges';
+@import './components/buttons';
+@import './components/hearts';
+@import './components/titles';
+@import './components/loader';
+@import './components/animations';

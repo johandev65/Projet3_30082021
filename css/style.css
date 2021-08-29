@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;700&display=swap");
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  font-size: 16px; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul, li {
+  list-style-type: none; }
+
+p {
+  font-size: 1em;
+  font-weight: 300;
+  font-family: "Roboto", cursive; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto; }
+
+.homepage_header_wrapper, .restaurant_header_wrapper {
+  max-width: 1440px;
+  display: flex;
+  height: 70px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center; }
+  .homepage_header_wrapper .logo, .restaurant_header_wrapper .logo {
+    cursor: pointer; }
+
+.back_button {
+  position: absolute;
+  font-size: 1.5em;
+  left: 25px;
+  cursor: pointer; }
+
+.hero {
+  margin: 0px auto -40px auto; }
+  @media (min-width: 1200px) {
+    .hero {
+      margin-bottom: 50px; } }
+  .hero img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover; }
+
+footer {
+  background-color: #383838; }
+
+.footer_wrapper {
+  max-width: 1440px;
+  color: white;
+  padding: 30px 15px;
+  height: 250px;
+  margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .footer_wrapper {
+      height: 180px; } }
+  .footer_wrapper .footer_list {
+    margin-top: 20px; }
+    @media screen and (min-width: 768px) {
+      .footer_wrapper .footer_list {
+        display: flex;
+        justify-content: space-between; } }
+  .footer_wrapper .footer__item {
+    font-family: "Roboto", cursive;
+    margin-top: 10px; }
+    .footer_wrapper .footer__item .light_icon {
+      margin-right: 10px;
+      display: inline-block;
+      width: 20px;
+      text-align: center; }
+
+.location {
+  background-color: #e8e8e8;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  box-shadow: 0px 10px 0px, 0px -4px 2px #0000002e; }
+  .location p {
+    font-size: 0.6em;
+    line-height: 60px;
+    font-family: "Roboto", cursive;
+    font-weight: 500; }
+  .location .pin {
+    font-size: 0.7em;
+    line-height: 50px;
+    display: block;
+    width: 40px; }
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 15px 30px 15px;
+  width: 100%;
+  height: 350px;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  margin: 0 auto; }
+  .reservation .reservation_subtitle {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #535353; }
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 40px 15px 30px 15px;
+  width: 100%;
+  height: 450px; }
+  @media screen and (min-width: 768px) {
+    .functioning {
+      height: auto;
+      padding: 40px; } }
+  .functioning .functioning_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    @media screen and (min-width: 768px) {
+      .functioning .functioning_items {
+        height: auto;
+        flex-direction: row;
+        gap: 40px; } }
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 50px 15px 50px 15px;
+  width: 100%;
+  gap: 25px;
+  background-color: #f5f5f5; }
+  @media screen and (min-width: 768px) {
+    .restaurants {
+      height: auto;
+      padding: 40px; } }
+  .restaurants .restaurants_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 30px 0; }
+    @media screen and (min-width: 768px) {
+      .restaurants .restaurants_items {
+        flex-direction: row;
+        flex-wrap: wrap; } }
+
+.restaurant_title_section {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 25px; }
+
+.restaurant_title_section .heart {
+  width: 30px; }
+
+.menu {
+  background-color: #f5f5f5;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 40px 20px 60px 20px;
+  margin-top: -40px;
+  position: relative; }
+  @media (min-width: 1200px) {
+    .menu {
+      margin-top: -90px; } }
+  .menu .choices_items {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; }
+    @media screen and (min-width: 768px) {
+      .menu .choices_items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 23px; } }
+  .menu .order {
+    text-align: center;
+    margin-top: 50px; }
+
+.card {
+  display: block;
+  width: 100%;
+  height: 250px;
+  border-radius: 13px;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 8px 15px #00000020;
+  background-color: #fff; }
+  @media screen and (min-width: 768px) {
+    .card {
+      width: 48%; } }
+  @media (min-width: 1200px) {
+    .card {
+      width: 23%; } }
+  .card .card_img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    border-radius: 13px 13px 0 0; }
+  .card .card_content {
+    height: 35%;
+    width: 100%;
+    padding: 5px 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px; }
+    .card .card_content .card__heart {
+      width: 30px;
+      margin: auto;
+      position: absolute;
+      right: 25px;
+      top: 20px; }
+      @media screen and (max-width: 360px) {
+        .card .card_content .card__heart {
+          top: 45px; } }
+  .card:hover {
+    transform: scale(1.02); }
+
+.choice {
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 2px 2px 5px 2px rgba(53, 53, 53, 0.1);
+  cursor: pointer; }
+  @media screen and (min-width: 768px) {
+    .choice {
+      width: 48%;
+      margin: 0; } }
+  @media (min-width: 1200px) {
+    .choice {
+      width: 32%; } }
+  .choice .choice_title,
+  .choice .choice_description {
+    width: 85%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+  .choice .choice_price {
+    position: absolute;
+    bottom: 14px;
+    right: 20px;
+    font-weight: bold;
+    font-family: "Roboto", cursive;
+    font-size: 0.875em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+
+.step {
+  width: 95%;
+  padding: 20px;
+  margin: 20px auto 20px auto;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  background-color: #f5f5f5;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 5px 2px rgba(53, 53, 53, 0.1);
+  cursor: pointer; }
+  .step:hover {
+    background-color: #9256dc21;
+    transition: 0.3s;
+    padding: 20px 22px; }
+  .step:hover .dark_icon {
+    color: #9356DC; }
+  .step .number {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 0px;
+    transform: translate(-50%, -50%);
+    background-color: #9356DC;
+    border-radius: 50%;
+    color: white;
+    line-height: 30px;
+    font-size: 1.1em;
+    font-weight: 400; }
+  .step .dark_icon {
+    font-size: 2em;
+    color: #636363;
+    margin: auto 20px auto 20px;
+    display: block;
+    text-align: left;
+    width: 30px; }
+  .step .content {
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    width: 100%;
+    font-size: 1.2em; }
+
+.card_new_badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99E2D0;
+  color: #098009;
+  font-weight: 500;
+  font-size: 0.875em;
+  padding: 8px 13px;
+  border-radius: 3px;
+  font-family: "Roboto", cursive; }
+
+.btn {
+  font-size: 1em;
+  border-radius: 70px;
+  padding: 15px 20px;
+  border: none;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #ff79da, #9356dc);
+  color: #ffffffd1;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 3px 3px 12px 2px rgba(53, 53, 53, 0.3);
+  transition: all 0.3s; }
+  .btn:hover {
+    padding: 15px 22px;
+    background: linear-gradient(180deg, #f593d9, #9f70da);
+    box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.5); }
+
+.like {
+  font-size: 30px;
+  margin-right: 10px;
+  opacity: 0.5; }
+
+.like:hover,
+.like:active,
+.like:visited {
+  background: linear-gradient(180deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 1s; }
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center; }
+
+.reservation_title {
+  font-style: normal;
+  font-family: "Roboto", cursive; }
+
+.restaurant_title_section {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  text-align: left; }
+
+h2 {
+  font-family: "Roboto", cursive; }
+
+.functioning_title, .restaurants_title {
+  font-weight: bold; }
+
+.menu_title {
+  font-size: 1em;
+  font-weight: 300;
+  font-style: normal;
+  width: 40px;
+  padding: 0px 0px 5px 0px;
+  border-bottom: solid 3px #99E2D0;
+  margin: 40px 0px 20px 0px; }
+
+.card__title {
+  font-weight: bold;
+  font-family: "Roboto", cursive;
+  font-size: 1.2em; }
+  @media screen and (max-width: 360px) {
+    .card__title {
+      font-size: 1.1em; } }
+
+.choice_title {
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: "Roboto", cursive;
+  padding: 0px 0px 5px 0px;
+  width: 75%; }
+
+.footer_title {
+  font-size: 1.6em;
+  font-family: "Shrikhand", cursive; }
+
+.loader {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader-display 4s ease-out forwards;
+  z-index: 10;
+  position: fixed; }
+  .loader__container {
+    width: 40rem;
+    padding: 0; }
+  .loader__svg {
+    height: 100%;
+    width: 100%;
+    font-size: 100rem; }
+    .loader__svg path {
+      fill: transparent;
+      stroke-width: 2;
+      stroke: #99E2D0;
+      stroke-dasharray: 200;
+      stroke-dashoffset: 200;
+      animation: anim 2s 500ms linear forwards; }
+
+@keyframes loader-display {
+  0% {
+    opacity: 1;
+    visibility: visible; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
+@keyframes anim {
+  0% {
+    stroke-dashoffset: 200; }
+  40% {
+    stroke-dashoffset: 100; }
+  90% {
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: 0; } }
+
+/*# sourceMappingURL=style.css.map */

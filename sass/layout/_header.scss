@@ -1,0 +1,35 @@
+// Header Homepage et Restaurants
+.homepage_header_wrapper, .restaurant_header_wrapper {
+    max-width: 1440px;
+    display: flex;
+    height: 70px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+        cursor: pointer;
+    }
+}
+
+// Header Restaurants
+.back_button {
+    position: absolute;
+    font-size: 1.5em;
+    left: 25px;
+    cursor: pointer;
+}
+
+.hero {
+    margin: 0px auto -40px auto;
+    @include desktop {
+            margin-bottom: 50px;
+    }
+
+    img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
