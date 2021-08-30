@@ -2,10 +2,11 @@
     display: flex;
     justify-content: space-between;
     margin-right: 25px;
-}
 
-.restaurant_title_section .heart {
-    width: 30px;
+    .heart {
+        width: 30px;
+        cursor: pointer;
+    }
 }
 
 .menu {
