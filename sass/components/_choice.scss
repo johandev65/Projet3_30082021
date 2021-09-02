@@ -13,11 +13,11 @@
     overflow: hidden;
 
     @include tablet {
-            width:48%;
-            margin: 0;
+        width:48%;
+        margin: 0;
     }
     @include desktop {
-            width:32%;
+        width:32%;
     }
     
     .choice_title,
@@ -40,6 +40,4 @@
         overflow: hidden;
         transition: 0.5s;
     }
-
-       
 }

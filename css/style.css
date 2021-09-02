@@ -223,12 +223,14 @@ footer {
       margin: auto;
       position: absolute;
       right: 25px;
-      top: 20px; }
+      top: 20px;
+      transition: transform ease 1s; }
       @media screen and (max-width: 360px) {
         .card .card_content .card__heart {
           top: 45px; } }
   .card:hover {
-    transform: scale(1.02); }
+    transform: scale(1.02);
+    transition: transform ease 0.4s; }
 
 .choice {
   width: 100%;
@@ -346,7 +348,8 @@ footer {
 .like {
   font-size: 30px;
   margin-right: 10px;
-  opacity: 0.5; }
+  opacity: 0.5;
+  cursor: pointer; }
 
 .like:hover,
 .like:active,
@@ -356,7 +359,7 @@ footer {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   opacity: 1;
-  transition: opacity 1s; }
+  transition: opacity ease 1s; }
 
 h1 {
   font-weight: bold;
@@ -505,18 +508,17 @@ h2 {
   right: 0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  transition: ease-out 0.5s;
+  transition: ease 0.4s;
   background-color: #99E2D0;
   width: 0;
   height: 100%;
   overflow: hidden; }
-
-.check_icon {
-  border-radius: 32px;
-  padding: 8px;
-  transition: ease-in 0.9s;
-  color: #fff;
-  font-size: 1.3em; }
+  .check_animation .check_icon {
+    border-radius: 32px;
+    padding: 8px;
+    transition: ease .4s;
+    color: #fff;
+    font-size: 1.3em; }
 
 .choice:hover .check_animation {
   width: 15%; }
@@ -532,10 +534,8 @@ h2 {
 
 .choice:hover .choice_price {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  line-height: 1.5em;
   margin-right: 13%;
+  transition: ease 0.4s;
   background-color: #fff;
   z-index: 999;
   padding-left: 15px; }

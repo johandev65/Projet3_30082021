@@ -14,7 +14,7 @@
 }
 
 .animation1 {
-	animation: apparition 1000ms 200ms ease-in-out backwards
+	animation: apparition 1000ms 200ms ease-in-out backwards;
 }
 .animation2 {
 	animation: apparition 1000ms 400ms ease-in-out backwards;
@@ -38,7 +38,7 @@
 	animation: apparition 1000ms 1600ms ease-in-out backwards;
 }
 .animation9 {
-	animation: apparition 1000ms 1800ms ease-in-out backwards
+	animation: apparition 1000ms 1800ms ease-in-out backwards;
 }
 .animation10 {
 	animation: apparition 1000ms 2000ms ease-in-out backwards;
@@ -49,7 +49,6 @@
 .animation12 {
 	animation: apparition 1000ms 2400ms ease-in-out backwards;
 }
-
 
 
 // ÉTAT "CHECK" LORS DE LA SELECTION D'UN PLAT
@@ -70,37 +69,40 @@
 	right:0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	transition: ease-out 0.5s;
+	transition: ease 0.4s;
 	background-color: $tertiary_color;
 	width: 0;
 	height:100%;
 	overflow: hidden;
+
+	.check_icon {
+		border-radius: 32px;
+		padding: 8px;
+		transition: ease .4s;
+		color: #fff;
+		font-size:1.3em;
+	}
 }
-.check_icon {
-	border-radius: 32px;
-	padding: 8px;
-	transition: ease-in 0.9s;
-	color: #fff;
-	font-size:1.3em;
-}
+
 .choice:hover .check_animation {
 	width: 15%;
 }
+
 .choice:hover .check_icon {
 	-webkit-animation: rotate 0.6s;
 	animation: rotate 0.6s;
 }
+
 .choice:hover .choice_description, 
 .choice:hover .choice_title {
 	margin: 0;
 	padding-right:10px;
 }
+
 .choice:hover .choice_price {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	line-height: 1.5em;
 	margin-right:13%;
+	transition: ease 0.4s;
 	background-color: #fff;
 	z-index: 999;
 	padding-left:15px;

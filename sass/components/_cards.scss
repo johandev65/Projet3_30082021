@@ -38,6 +38,7 @@
         position: absolute;
         right: 25px;
         top: 20px;
+        transition: transform ease 1s;
         @include small_mobile {
             top: 45px;
         }
@@ -46,5 +47,6 @@
 
     &:hover {
         transform: scale(1.02);
+        transition: transform ease 0.4s;
     }
 }

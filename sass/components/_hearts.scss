@@ -1,5 +1,4 @@
 // BOUTONS "J'AIME" EN FORME DE COEUR AVEC L'EFFET HOVER
-
 .like {
     font-size: 30px;
     margin-right: 10px;
@@ -7,15 +6,15 @@
     cursor: pointer;
   }
   
-  .like:hover,
-  .like:active,
-  .like:visited {
+.like:hover,
+.like:active,
+.like:visited {
     background: $gradient_color;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity ease 1s;
   }
 
 

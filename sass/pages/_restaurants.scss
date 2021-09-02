@@ -25,9 +25,9 @@
         flex-direction: column;
         gap:25px;
         @include tablet {
-                flex-direction: row;
-                flex-wrap: wrap;
-                gap: 23px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 23px;
         }
     }
 
